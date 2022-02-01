@@ -28,6 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     # steps to perform in job
     steps:
+      - name: Login to DockerHub
+        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{secrets.DOCKERHUB_TOKEN}}
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build image and push backend
@@ -50,5 +52,3 @@ jobs:
           context: ./http_basic
           tags: ${{secrets.DOCKERHUB_USERNAME}}/http_basic
           push: ${{ github.ref == 'refs/heads/main' }}
-      - name: Login to DockerHub
-        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{secrets.DOCKERHUB_TOKEN}}
