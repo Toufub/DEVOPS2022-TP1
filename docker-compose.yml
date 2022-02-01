@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  backend-api:
+    build: 
+      ./backend-api-2/simple-api-main/simple-api/
+    networks:
+      - my-network
+    depends_on:
+      - postgres
+  postgres:
+    build: 
+      ./postgres/
+    networks:
+      - my-network
+
+  httpd:  
+    build: 
+      ./http_basic/
+    ports:
+      - 80:80 
+    networks:
+      - my-network
+    depends_on:
+      - backend-api
+networks:
+  my-network:

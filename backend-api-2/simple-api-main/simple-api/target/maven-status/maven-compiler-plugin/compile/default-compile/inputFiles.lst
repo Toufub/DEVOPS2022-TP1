@@ -1,0 +1,10 @@
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/controller/StudentController.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/dao/StudentDAO.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/service/DepartmentService.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/controller/DepartmentController.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/SimpleApiApplication.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/entity/Student.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/controller/GreetingController.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/dao/DepartmentDAO.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/entity/Department.java
+/home/projets7/DOCKER/TP1/backend-api-2/simple-api-main/simple-api/src/main/java/fr/takima/training/simpleapi/service/StudentService.java
