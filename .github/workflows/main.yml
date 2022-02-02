@@ -20,7 +20,7 @@ jobs:
           java-version: '11'  
       #finally build your app with the latest command  
       - name:  Build  and  test  with  Maven  
-        run:  mvn -B verify sonar:sonar -Dsonar.projectKey=Toufub_DEVOPS2022-TP1 -Dsonar.organization=toufub -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONAR_TOKEN}}  --file backend-API/simple-api/pom.xml
+        run:  mvn -B verify sonar:sonar -Dsonar.projectKey=Toufub_DEVOPS2022-TP1 -Dsonar.organization=toufub -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONAR_TOKEN}} --file backend-api-2/simple-api-main/simple-api/pom.xml
 
   build-and-push-docker-image:
     needs: test-backend
@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
         # relative path to the place where source code with Dockerfile is located
-          context: ./backend-API/simple-api
+          context: ./backend-api-2/simple-api-main/simple-api
         # Note: tags has to be all lower-case
           tags: ${{secrets.DOCKERHUB_USERNAME}}/backend-api
           push: ${{ github.ref == 'refs/heads/main' }}
